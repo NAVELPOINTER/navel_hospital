@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>navel_hospital_login</title>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/font_awesome_4/css/font-awesome.css">
+    <script src="../js/index.js" ></script>
+</head>
+<body>
+    <div class="main-body">
+        <div class="upper-section">
+            <h1>Welcome to Navel Hospital</h1>
+            <ul>
+                <li style="border-right: 3px solid #0099ff"><a id="sign-up" href="#" onclick="display_signup_form()">Sign Up</a></li>
+                <li><a id="sign-in" href="#" onclick="display_signin_form()">Sign In</a></li>
+            </ul>
+        </div>
+
+        <div class="lower-section">
+            <canvas id="login-canvas-green-1" width="1900px" style="margin-top: 15%">
+                your browser doesn't support canvas
+            </canvas><br/>
+            <canvas id="login-canvas-blue-1" width="1900px" style="margin-top: -10%">
+
+            </canvas>
+            <img src="../images/navel_hospital_logo.png" alt="hospital logo" id="hospital-logo" />
+        </div>
+        <div class="my_waves">
+            <canvas id="waves" width="1900px" height="280px">
+
+            </canvas>
+        </div>
+    </div>
+    <!--my sign-up form-->
+    <div class="sign-up-div">
+        <a id="hide_sign_up" href="#" onclick="hide_signup_form()">X</a>
+        <form id="sign_up" name="sign_up_form" method="post" action="../php/sign_up.php" onsubmit="hide_signup_form()">
+            <h2>Sign Up</h2>
+            <div>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" name="name" value="" placeholder="Enter your username..."/>
+            </div>
+            <div>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input type="email" name="email" value="" placeholder="Enter your email..."/>
+            </div>
+            <div>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" name="password" value="" placeholder="Enter your password..."/>
+            </div>
+            <div>
+                <i class="fa fa-id-card" aria-hidden="true"></i>
+                <input type="text" name="id_no" value="" placeholder="Enter your id number..."/>
+            </div>
+            <div>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <input type="text" name="service_tag" value="" placeholder="Enter your service_tag..."/>
+            </div>
+            <div>
+                <input type="submit" value="Sign Up"/>
+            </div>
+        </form>
+    </div>
+
+    <!-- my sign-in form-->
+    <div class="sign-in-div">
+        <a id="hide_sign_in" href="#" onclick="hide_signin_form()">X</a>
+        <form id="sign_in" name="sign_in_form" method="post" action="../php/sign_in.php" onsubmit="hide_signin_form()">
+            <h2>Sign In</h2>
+            <div>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" name="name" value="" placeholder="Enter your username..."/>
+            </div>
+
+            <div>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" name="password" value="" placeholder="Enter your password..."/>
+            </div>
+            <div>
+                <input type="submit" value="Sign In"/>
+            </div>
+        </form>
+    </div>
+    <div class="loader">
+
+    </div>
+<script>
+    draw_wave();
+    waves();
+
+</script>
+</body>
+</html>

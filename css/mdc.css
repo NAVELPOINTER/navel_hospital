@@ -1,0 +1,728 @@
+/* creating my nav bars*/
+body{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* styling for the horizontal panel*/
+.horizontal-nav{
+    padding: 1% 0%;
+    margin-top: -1%;
+    width: 100%;
+    height: 100px;
+    background: -moz-linear-gradient(#059105,#059105, #04d604);
+    background: -o-linear-gradient(#059105, #059105, #04d604);
+    background: linear-gradient(#059105, #059105, #04d604);
+}
+.account-image{
+    margin-top: 1%;
+    width: 15%;
+    height: 170px;
+    border-radius: 50%;
+    background: -moz-linear-gradient(to bottom right,#059105,#059105,#059105,#059105, #04d604);
+    background: -o-linear-gradient(to bottom right,#059105, #059105,#059105,#059105, #04d604);
+    background: linear-gradient(to bottom right,#059105, #059105,#059105,#059105, #04d604);
+    position: relative;
+    z-index: 10;
+}
+
+.account-image img{
+    width: 70%;
+    height: 170px;
+    margin-left: 1%;
+    border-radius: 50%;
+    margin-left: 2%;
+}
+.horizontal-nav p{
+    color: #ffffff;
+    float: right;
+    font-family: serif;
+    font-weight: bolder;
+    margin-right: 10%;
+    margin-top: -1%;
+}
+
+.horizontal-nav p a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.other-links-div{
+    float: right;
+    margin-right: 4.5%;
+    margin-top: -2%;
+    background-color: #0ba50b;
+    border-radius: 2%;
+    z-index: 10;
+    position: relative;
+    display: none;
+}
+.other-links-div ul{
+    list-style-type: none;
+    width: 100%;
+    margin-left: -35%;
+}
+.other-links-div ul li{
+    margin: 5% 0%;
+    text-align: left;
+    padding: 2% 5%;
+}
+.other-links-div ul li:hover{
+    background-color: #036e03;
+}
+.other-links-div ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: serif;
+}
+.horizontal-nav h1{
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -9%;
+}
+
+/* styling for the vertical bar */
+.vertical-nav{
+    margin-top: -1%;
+    width: 13%;
+    padding: 5% 0 0 2%;
+    height: 800px;
+    background: -moz-linear-gradient(to right,#059105,#059105, #04d604);
+    background: -o-linear-gradient(to right,#059105, #059105, #04d604);
+    background: linear-gradient(to right,#059105, #059105, #04d604);
+}
+
+
+.vertical-nav .profile-info #username{
+    font-family: serif;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    width: 60%;
+    border-radius: 5%;
+    margin-left: -10%;
+}
+
+.vertical-nav .profile-info #change-profile{
+    background-color: #ffffff;
+    border-radius: 5%;
+    padding: 3%;
+    color: cornflowerblue;
+    font-weight: bolder;
+    font-family: serif;
+    text-decoration: none;
+}
+
+.vertical-nav .Dashboard h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: serif;
+    font-size: 1.0em;
+}
+
+.vertical-nav .Dashboard hr{
+    width: 100%;
+    margin-top: -7%;
+    float: left;
+    margin-left: -10%;
+}
+
+.vertical-nav .Dashboard ul{
+    margin-top: -1%;
+    list-style-type: none;
+    margin-left: -25%;
+}
+.vertical-nav .Dashboard ul li {
+    color: #ffffff;
+    font-family: serif;
+    padding: 10% 1% 0.5% 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    text-align: center;
+}
+
+.Dashboard ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* styling for the viewing panel*/
+
+.viewing-panel{
+    width: 84%;
+    height: 820px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    margin-top: -46%;
+}
+
+
+
+.viewing-panel-title {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    margin: 1% 10%;
+    padding: 0.1% 0 1% 0;
+    height: 5%;
+    color: rgb(0, 174, 255);
+    text-align: center;
+    font-family: serif;
+    font-weight: bolder;
+    border-radius: 2%;
+}
+
+.viewing-frame{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    width: 122%;
+    margin-left: -11%;
+    margin-top: 1%;
+    height: 700px;
+    border-radius: 1%;
+    border: none; 
+}
+
+/* styling for the account info*/
+.main-account-info{
+    width: 90%;
+    padding: 2%;
+}
+.main-account-info i{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.main-account-info h3{
+    color: #06b0ff;
+    margin: 5%;
+}
+#add-account{
+    background-color: green;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 3% 5%;
+    border-radius: 5%;
+}
+
+#delete-account{
+    margin-top: 50%;
+    background-color: #c50404;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 3% 5%;
+    border-radius: 5%;
+}
+.main-account-info img{
+    margin-top: -15%;
+    width: 20%;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 60%;
+    padding: 3%;
+}
+
+.main-account-info #change-profile{
+    text-decoration: none;
+    color: #06b0ff;
+    font-weight: bolder;
+    font-family: serif;
+    margin-left: 68%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1% 2%;
+    border-radius: 5%;
+}
+.main-account-info input[type="file"]{
+    display: none;
+}
+#profile-table{
+    border: 1 px solid black;
+    width: 100%;
+    margin-top: 5%;
+    border-collapse: collapse;
+}
+
+#profile-table #heading{
+    background-color: #06b0ff;
+    color: white;
+    font-family: serif;
+    font-weight: bolder;  
+    padding: 1%;
+    border-radius: 10%;
+}
+
+tr td{
+    color: #06b0ff;
+}
+
+#profile-table #heading th{
+    padding: 1%;
+}
+
+#profile-table tr{
+    border-bottom: 1px solid #e2dfdf;
+}
+#profile-table tr td,th{
+    text-align: left;
+}
+
+#profile-actions-listing{
+    list-style: none;
+}
+
+#profile-actions-listing li{
+    display: inline;
+}
+
+#profile-actions-listing a{
+    text-decoration: none;
+}
+
+#profile-actions-listing #delete{
+    background-color: #c50404;
+    color: #ffffff;
+    margin-right: 15%;
+    font-weight: bolder;
+    padding: 2% 6%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#profile-actions-listing #update{
+    background-color: #0188c7;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 2% 6%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* styling for the chats.html*/
+.main-chats-div{
+    width: 90%;
+    margin: 2%;
+}
+.chat-header{
+    width: 100%;
+}
+.new-chat{
+    background-color: green;
+    border-radius: 50%;
+    width: 7%;
+    padding: 3% 2%;
+    height: 50px;
+}
+.new-chat #new-chat{
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.new-chat i{
+    margin: 15% 0 0 30%;
+}
+
+.frame-holder{
+    width: 40%;
+    margin-left: 15%;
+    margin-top: -10%;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 0.5%;
+}
+
+.frame-holder ul{
+    width: 100%;
+    list-style: none;
+}
+
+.frame-holder ul li{
+    display: inline;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1.5%;
+}
+
+.frame-holder ul li a{
+    text-decoration: none;
+    color: #0188c7;
+    font-weight: bolder;
+    padding: 1% 3%;
+    border-radius: 2%;
+}
+.recent-chats{
+    margin-top: 7%;
+    width: 15%;
+}
+.recent-chats hr{
+    margin-top: -5%;
+    border-width: 3px;
+}
+.recent-chats h3{
+    color: #04d604;
+    font-family: serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.recent-chats ul{
+    list-style: none;
+}
+
+.recent-chats ul li img{
+    border-radius: 50%;
+    width: 65%;
+    height: 80px;
+}
+
+.recent-chats-div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+    width: 100%;
+    margin-left: -20%;
+    padding-left: 30%;
+}
+
+.recent-chats-div h4{
+    color: #06b0ff;
+    font-weight: bolder;
+    font-family: serif;
+    margin-left: 25%;
+}
+.chats-content-holder{
+    width: 88%;
+    height:550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    margin-top: -41%;
+    margin-left: 17%;
+}
+
+.chats-content-holder .chats-iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* styling for the annual data */
+.nav-annual-data-div{
+    width: 100%;
+}
+.nav-annual-data-div #choose-graph{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    width: 10%;
+    padding: 1%;
+    text-align: center;
+}
+
+.nav-annual-data-div #choose-graph a{
+    text-decoration: none;
+    color: #06b0ff;
+    font-weight: bolder;
+}
+
+.nav-annual-data-div #warning{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    width: 10%;
+    padding: 1%;
+    text-align: center;
+    background-color:  rgb(248, 60, 60);
+    margin-left: 45%;
+    margin-top: 0%;
+}
+
+.nav-annual-data-div #warning a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.nav-annual-data-div h2{
+    color: #06b0ff;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -4%;
+    font-family: arial;
+}
+
+.nav-annual-data-div .graph-holder{
+    width: 100%;
+    height: 520px;
+    margin-top: 2%;
+    border: 1px solid #06b0ff;
+}
+.graph-criteria{
+    margin-top: -40%;
+    position: relative;
+    width: 20%;
+}
+.graph-criteria ul{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    list-style-type: none;
+    padding: 1%;
+    border-radius: 2%;
+    background-color: rgb(249, 250, 248);
+}
+#main-criteria-listing{
+    width: 100%;
+    display: none;
+}
+#main-criteria-listing ul{
+    width: 85%;
+    margin-left: 10%;
+    display: none;
+}
+.graph-criteria a{
+    color: #06b0ff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.sub-main-criteria-listing-item li{
+    margin: 1%;
+}
+
+.sub-main-criteria-listing-item li:hover{
+    background-color: rgba(212, 214, 210, 0.842);
+}
+.sub-main-criteria-listing-item li a{
+    text-align: center;
+}
+
+/*styling for the disclaimer */
+.disclaimer-text{
+    width: 60%;
+    height: auto;
+    margin-top: 5%;
+    background-color:rgb(206, 199, 199);
+    border-radius: 2%;
+    margin-left: 20%;
+}
+
+.disclaimer-text h3{
+    padding: 3%;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.disclaimer-text #heading{
+    background-color:rgb(248, 60, 60);
+    border-radius: 2% 2% 0 0;
+}
+
+.disclaimer-text #footing{
+    background-color: rgb(102, 99, 99);
+    border-radius: 0 0 2% 2%;
+    
+}
+.disclaimer-text p{
+    margin: 1% 2%;
+    text-align: justify;
+    font-weight: bold;
+}
+
+/* styling for the online appointment booking*/
+.book-appointment form{
+    width: 70%;
+    height: auto;
+    margin: 2% 15%;
+    background-color: #dee3e6;
+    border-radius: 5% 5% 0 0;
+    padding: 0 0 1% 0;
+}
+
+.book-appointment form h3{
+    text-align: center;
+    background-color: #06b0ff;
+    font-family: serif;
+    font-weight: bolder;
+    padding: 2%;
+    color: #ffffff;
+    border-radius: 5% 5% 0 0;
+}
+
+.counting-indicator ul {
+    list-style: none;
+    margin-left: 40%;
+}
+#fst-indicator{
+    color: green;
+}
+.counting-indicator ul li{
+    margin: 2%;
+    display: inline;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.book-appointment form button{
+    color: #ffffff;
+    background-color: #06b0ff;
+    padding: 1%;
+    border: none;
+}
+
+.nav-btn{
+    margin-left: 30%;
+}
+
+.nav-btn ul{
+    list-style: none;
+}
+
+.nav-btn ul li{
+    display: inline;
+}
+
+.nav-btn #previous{
+    margin-right: 20%;
+    padding: 3%;
+    font-weight: bolder;
+}
+
+.nav-btn #next{
+    font-weight: bolder;
+    padding: 3%;
+}
+
+.book-appointment form input[type="text"]{
+    border: none;
+    padding: 2%;
+    width: 90%;
+    margin: 1% 3%;
+    border-radius: 5%;
+}
+
+#btn-end{
+    width: 83%;
+}
+
+.book-appointment form .slide{
+    display: none;
+}
+#slide-shown{
+    display: block;
+}
+
+.book-appointment form input[type="submit"]{
+    margin-left: 80%;
+    color: #ffffff;
+    background-color: #06b0ff;
+    font-weight: bolder;
+    font-family: serif;
+    padding: 1% 2%; 
+    border: none;
+    display: none;
+}
+
+/* styling for available med staff*/
+
+.available-med-staff{
+    width: 100%;
+}
+
+.available-med-staff ul{
+    list-style: none;
+    width: 90%;
+}
+
+.available-med-staff ul li{
+    background-color: #dee3e6;
+    width: 100%;
+    padding: 1%;
+    border-radius: 5%;
+    margin: 1%;
+}
+
+.available-med-staff ul li img{
+    border-radius: 50%;
+    width: 15%;
+    margin-left: 40%;
+}
+
+.available-med-staff ul li p{
+    color: #06b0ff;
+    font-weight: bolder;
+    font-family: serif;
+    margin-left: 57%;
+    margin-top: -5%;
+}
+.available-med-staff ul li #department {
+    margin: 3% 43%;
+}
+
+.confirmation-box{
+    width: 40%;
+    margin-left: 30%;
+    background-color: #dee3e6;
+    border-radius: 5%;
+    margin-top: -45%;
+    z-index: 10;
+    position: relative;
+    display: none;
+}
+
+.confirmation-box h3{
+    color: #ffffff;
+    background-color: rgb(233, 58, 58);
+    font-weight: bolder;
+    text-align: center;
+    padding: 3%;
+    width: 94%;
+    margin-left: 0%;
+}
+
+.confirmation-box p{
+    text-align: center;
+    padding: 5% 2%;
+    color: #f50303;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.confirmation-box button{
+    border: none;
+    color: #ffffff;
+    padding: 2%;
+    text-align: center;
+    font-weight: bolder;
+    width: 49.5%;
+}
+
+.confirmation-box #ok{
+    background-color: rgb(233, 58, 58);
+}
+
+.confirmation-box #cancel{
+    background-color: grey;
+    color: black;
+    
+    margin-top: -100%;
+}
+.deletion-details{
+    margin-top: 10%;
+}
+.deletion-details form{
+    background-color: #dee3e6;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.deletion-details form input{
+    width: 90%;
+    margin: 2% 3%;
+    padding: 2% 2%;
+    border: none;
+}
+
+.deletion-details form input[type="submit"]{
+    background-color: rgb(233, 58, 58);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    margin: 2% 0 0 0;
+}

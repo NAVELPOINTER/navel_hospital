@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/font_awesome_4/css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/mdc.css">
+    <title></title>    
+</head>
+<body>
+    <div class="main-account-info">
+        <h3>Account Info:</h3>
+        <a id="add-account" href="#">Add Account   <i class="fa fa-user" aria-hidden="true"></i></a>
+        <a id="delete-account"  onclick="deletion_action()" href="#">Delete Account   <i class="fa fa-trash" aria-hidden="true"></i></a>
+        <img src="../../images/admin.jpeg" alt="profile picture"/>
+        <form action = "../../php/submit_profile.php" id="profile-form" method="post" enctype="multipart/form-data">
+            <label for="change-profile-input" id="change-profile" href="#">Change Profile</label>
+            <input type="file" name="image" id="change-profile-input"/>
+        </form>
+        <table id="profile-table">
+            <tr id="heading">
+                <th>value</th>
+                <th>current setting</th>
+                <th>actions</th>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>emmanuelsankoh</td>
+                <td>
+                    <ul id="profile-actions-listing">
+                        <li><a id="delete" href="#">Delete <i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                        <li><a id="update" href="#">Update <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>emmanuelsankoh@gmail.com</td>
+                <td>
+                    <ul id="profile-actions-listing">
+                        <li><a id="delete" href="#">Delete <i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                        <li><a id="update" href="#">Update <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>williammiller12@@</td>
+                <td>
+                    <ul id="profile-actions-listing">
+                        <li><a id="delete" href="#">Delete <i class="fa fa-trash" aria-hidden="true"></i></a></li>
+                        <li><a id="update" href="#">Update <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="confirmation-box">
+        <h3>Delete Account</h3>
+        <p>Are you sure you want to delete your navel hospital account?</p>
+        <button id="ok"><a href="delete_account.html">Ok</a></button> <button onclick="deletion_action()" id="cancel">Cancel</button>
+    </div>
+
+    <script src="../../js/mdcPatients.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        change_profile();
+    </script>
+</body>
+</html>

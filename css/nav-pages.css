@@ -1,0 +1,506 @@
+.main-home-div{
+    width: 100%;
+}
+
+.nav-bar{
+    width: 100%;
+    margin-top: -1%;
+}
+
+.nav-bar ul{
+    background: -moz-linear-gradient(to bottom,#059105,#059105, #04d604);
+    background: -o-linear-gradient(to bottom,#059105, #059105, #04d604);
+    background: linear-gradient(to bottom,#059105, #059105, #04d604);
+    padding: 1% 2%;
+    width: 100%;
+}
+
+.nav-bar ul li{
+    display: inline;
+    padding-left: 2%;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: serif;
+    font-weight: bolder;
+}
+/*styling for the home page*/
+.upper{
+    width: 100%;
+    background: -moz-linear-gradient(#0084ff, #03a3ee, #03b6fd);
+    background: -o-linear-gradient(#0084ff, #03a3ee, #03b6fd);
+    background: linear-gradient(#0084ff, #03a3ee, #03b6fd);
+    margin-top: -1%;
+    padding: 6% 0;
+}
+
+.upper i{
+    color: #ffffff;
+    font-weight: bolder;
+}
+.upper h1{
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: serif;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -5%;
+    padding: 1%;
+}
+.upper hr{
+    margin: 5%;
+    margin-top: -1%;
+}
+
+.upper .upper-paragraphs{
+    margin-top: 5%;
+}
+.upper p{
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 0%;
+}
+
+.home-canvas{
+    z-index: 10;
+    margin-top: -4%;
+    margin-bottom: 8%;
+}
+
+.lower-section-info{
+    width: 100%;
+    height: 200px;
+    background-color: #059105;
+}
+
+.lower-section-info .bed{
+    width: 30%;
+}
+
+.lower-section-info i{
+    color: #ffffff;
+    padding: 1%;
+    font-weight: bolder;
+}
+
+.lower-section-info .bed i{
+    font-size: 200px;
+    margin-left: 45%;
+}
+
+.lower-section-info .directive{
+    margin-top: -10%;
+}
+
+.lower-section-info .directive ul{
+    list-style: none;
+    margin-left: 40%;
+    border-left: 1px solid #ffffff;
+}
+
+.lower-section-info .directive ul li{
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: serif;
+}
+
+/*about us*/
+.map-location #map h2{
+    color: #00aeff;
+    font-weight: bolder;
+    font-family: serif;
+    text-align: center;
+}
+
+.middle-band{
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid green;
+}
+canvas{
+    margin-top:1px;
+}
+.mid-lower-section{
+    width: 100%;
+}
+.ceo-info{
+    width: 30%;
+    border-right: 15px solid #019b1a;
+    border-right-style: dotted;
+    padding-right:2%;
+}
+.ceo-info h3{
+    color: #00aeff;
+    font-weight: bolder;
+    font-family: serif;
+}
+.ceo-info ul li{
+    list-style-type: none;
+}
+.ceo-info i{
+    color: #d1d10c;
+    font-weight: bolder;
+}
+.ceo-info img{
+    float:left;
+    width:50%;
+    height: 200px;
+    border-radius:100%;
+}
+.medical-buildings-slider{
+    padding: 0 1%;
+    margin-left: 33%;
+    margin-top:-21%;
+    width: 30%;
+    height: 400px;
+    height: 100px;
+}
+.medical-buildings-slider img{
+    width: 100%;
+    height: 400px;
+    border-radius: 2%;
+}
+.text-directive{
+    float: right;
+    width: 33%;
+    border-left: 15px solid #019b1a;
+    border-left-style: dotted;
+    margin-top: -5%;
+    padding-left: 1%;
+}
+
+.a-lower-section{
+    padding-top: 5%;
+    width: 100%;
+    height: 200px;
+    background-color: #0084ff;
+    margin-top: 17%;
+    color: #ffffff;
+}
+
+.a-lower-section h2{
+    text-align: center;
+}
+
+.a-lower-section h3{
+    text-align: center;
+}
+
+#display-counter ul li{
+    list-style-type: none;
+    display: inline-block;
+    color: #019b1a;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.text-directive-real{
+    background-color: #d4d1d1;
+    height: 330px;
+    border-radius: 1%;
+    color: #00aeff;
+}
+#text-directive-real{
+    text-align: center;
+    padding-top: 20%;
+    font-weight: bolder;
+    font-size: 130%;
+}
+/* styling for the contact us page*/
+
+.upper-section{
+    width: 100%;
+    margin: 1%;
+}
+
+.upper-section .contact-us-form{
+    width: 40%;
+    border-right: 15px solid #dee3e6;
+}
+
+.contact-us-form form
+{
+    width: 90%;
+    background-color: #dee3e6;
+    padding: 1%;
+    border-radius:1%;
+}
+
+.contact-us-form input{
+    width: 95%;
+    padding: 1%;
+    margin: 1%;
+    border: none;
+    border-radius:1%;
+}
+.contact-us-form textarea{
+    width: 95%;
+    padding: 1%;
+    margin: 1%;
+    border-radius:1%;
+    border: none;
+}
+
+.contact-us-form form h2{
+    color: rgb(0, 119, 255);
+    background-color: #dee3e6;
+    text-align: center;
+    font-family: serif;
+    border-radius:1%;
+    font-weight: bolder;
+}
+
+.contact-us-form form input[type="submit"]{
+    background-color: #26cf72;
+    color: #ffffff;
+    font-family:serif;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 2%
+}
+
+.upper-section .response-graph{
+    width: 60%;
+    float: right;
+    margin-top: -40%;
+}
+
+.upper-section .response-graph h3{
+    color: #26cf72;
+    font-weight: bolder;
+    font-family: serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.upper-section .response-graph hr{
+    background-color: #26cf72;
+    height: 15px;
+    margin: 0 2%;
+    border: none;
+}
+
+.bars{
+    width: 100%;
+    margin: 1% 2%;
+}
+
+.bars div{
+    width: 100%;
+    height: 30px;
+    margin: 2% 0;
+}
+
+.bars #bar-real-1 div{
+    width: 85%;
+    height: 30px;
+    background-color: rgb(221, 146, 7);
+}
+
+.bars #bar-real-2 div{
+    width: 55%;
+    height: 30px;
+    background-color: #7c057c;
+}
+
+.bars #bar-real-3 div{
+    width: 30%;
+    height: 30px;
+    background-color: magenta;
+}
+
+.telephone div{
+    width: 15%;
+    height: 25px;
+    background-color: rgb(221, 146, 7);
+}
+.telephone p{
+    color: rgb(221, 146, 7);
+}
+.website-queries div{
+    width: 15%;
+    height: 25px;
+    background-color: magenta;
+}
+.website-queries p{
+    color: magenta;
+}
+.email div{
+    width: 15%;
+    height: 25px;
+    background-color: #7c057c;
+}
+
+.email p{
+    color: #7c057c;
+}
+
+.response-graph-dir{
+    margin: 5% 7%;
+}
+
+.response-graph-dir ul{
+    width: 100%;
+}
+.response-graph-dir ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 15%;
+}
+
+.lower-section{
+    width: 60%;
+    background-color: #dee3e6;
+    border-radius: 1%;
+    padding: 1% 1%;
+}
+.lower-section ul{
+    list-style-type: none;
+}
+.lower-section ul li{
+    padding: 1%;
+    color: #00aeff;
+    font-weight: bolder;
+    font-family: serif;
+}
+.tel-no-btn{
+    width: 50%;
+}
+
+.email-addresses{
+    width: 50%;
+    float: right;
+    margin-top:-14%;
+}
+
+.locate-us{
+    float: right;
+    margin-top: -7%;
+    border-radius: 2%;
+    width: 35%;
+    background-color: #02a9eb;
+    padding: 2% 0;
+}
+
+.locate-us a{
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    margin-left: 50%;
+}
+.response{
+    width: 100%;
+}
+.response ul{
+    margin-top: 2%;
+    width: 95%;
+    float: right;
+}
+.response ul li{
+    display: inline-block;
+}
+
+.response ul li img{
+    width: 80%;
+    height: 220px;
+    border-radius:100%;
+}
+
+.medical-center-login-form{
+    position: relative;
+    z-index: 10;
+    margin-left: 30%;
+    width: 60%;
+    margin-top: -70%;
+    display: none;
+}
+
+#medical-center-login-form{
+    width: 60%;
+}
+
+#hide_login{
+    float: right;
+    text-decoration: none;
+    color: #00aeff;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: -80%;
+}
+
+.footer{
+    background-color: rgb(44, 43, 43);
+    padding: 2%;
+    z-index: 10;
+    position: relative;
+}
+
+.footer h3{
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: serif;
+    text-align: center;
+}
+
+.footer p{
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #0084ff;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.social-media ul li{
+    display: inline-block;
+    margin: 0% 2%;
+    color: #03b6fd;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.footer h2{
+    color: #ffffff;
+}
+
+.footer hr{
+    width: 30%;
+    margin-left: 0%;
+}
+.footer-nav{
+    margin-left: 30%;
+    list-style: none;
+    margin-bottom: 0%;
+}
+.footer-nav li{
+    font-size: medium;
+    color: #0084ff;
+    display: inline-block;
+    border-right: 1px solid #0084ff;
+    padding: 0% 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

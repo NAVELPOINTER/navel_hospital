@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>medical-data-center--PATIENTS</title>
+    <link rel="stylesheet" href="../../css/nav-pages.css"/>
+    <link rel="stylesheet" href="../../css/mdc.css"/>
+    <link rel="stylesheet" href="../../css/font_awesome_4/css/font-awesome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../js/mdcPatients.js"></script>
+</head>
+<body>
+    <div class="main-patients-div">
+        <!--html tags for the horizontal bar-->
+        <div class="horizontal-nav">
+            <div class="account-image">
+                <img src="../../images/admin.jpeg" alt="profile"/>
+            </div>
+            <h1>Navel Hospital Medical Statistics</h1>
+            <p><a onclick="display_other_links()" id="other-links" href="#">Other Links <i class="fa fa-sort-desc" aria-hidden="true"></i></a></p>
+        </div>
+        
+        <div class="other-links-div">
+            <ul>
+                <li><a href="../home.html">Home</a</li>
+                <li><a href="../about-us.html">about-us</a</li>
+                <li><a href="../contact-us.html">contact-us</a></li>
+            </ul>
+        </div>
+
+        <!--html tags for the vertical bar-->
+        <div class="vertical-nav">
+            <div class="profile-info">
+                <p id="username">Emmanuel Sankoh</p>
+                <a id="change-profile" href="#">Change Profile</a>
+            </div>
+            <div class="Dashboard">
+                <h3>Dashboard</h3>
+                <hr>
+                <ul>
+                    <li><a href="account-info.html" target="viewing-frame">Account Info</a></li>
+                </ul>
+            </div>
+            <div class="Dashboard">
+                <h3>Navel Med Statistics</h3>
+                <hr>
+                <ul>
+                    <li><a href="nav-annual-data.html" target="viewing-frame">Annual Data</a></li>
+                    <li><a href="nav-monthly-data.html" target="viewing-frame">Monthly Data</a></li>
+                    <li><a href="nav-weekly-data.html" target="viewing-frame">Weekly Data</a></li>
+                </ul>
+            </div>
+            <div class="Dashboard">
+                <h3>Personal Med-Statistics</h3>
+                <hr>
+                <ul>
+                    <li><a href="your-annual-data.html" target="viewing-frame">Annual Data</a></li>
+                </ul>
+            </div>
+            <div class="Dashboard">
+                <h3>Online Service</h3>
+                <hr>
+                <ul>
+                    <li><a href="book-appointment.html" target="viewing-frame">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--html tags for the viewing panel-->
+        <div class="viewing-panel">
+            <div class="viewing-panel-title">
+                <h2>Viewing Panel</h2>
+                <iframe class="viewing-frame" src="account-info.html" name="viewing-frame">
+
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>

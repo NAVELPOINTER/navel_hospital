@@ -1,0 +1,7 @@
+#map-holder{
+  width: 800px;
+  height: 600px;
+  border: 1px solid green;
+}
+
+/*https://maps.googleapis.com/maps/api/js?key=AIzaSyCiyGQfwHguQtaOpqkvUiNXnJfVcNayYuw&callback=myMap*/

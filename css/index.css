@@ -1,0 +1,199 @@
+/* css to style the login buttons*/
+body{
+    background-color: #f9fafc;
+}
+.main-body{
+    background: -moz-linear-gradient(#00cc99, #0099ff);
+    background: -o-linear-gradient(#00cc99, #0099ff);
+    background: linear-gradient(#00cc99, #0099ff);
+    height: 965px;
+}
+.upper-section{
+    background-color: #231e1e;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: relative;
+}
+.upper-section h1{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+.upper-section ul{
+    list-style-type: none;
+    float: right;
+    margin-right: 3%;
+    margin-top: -3%;
+}
+.upper-section ul li{
+    display: inline-block;
+    font-weight: bolder;
+}
+
+.upper-section ul li a{
+    text-decoration: none;
+    color: #0099ff;
+    padding-right: 5px;
+
+}
+
+/* styling the lower section of the login page*/
+.lower-section #hospital-logo{
+    border-radius: 100%;
+    width: 15%;
+    height: 15%;
+    margin-left: 40%;
+    margin-top: -12%;
+    z-index: 10;
+    position: relative;
+}
+
+/* styling for my sign up form */
+form{
+    width: 30%;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #dfe5ec;
+    margin-left: 5%;
+}
+form i{
+    color: white;
+    font-weight: bolder;
+    padding: 2% 1%;
+    margin-left: 2%;
+    background-color: #0099ff;
+    width: 5%;
+    border-radius: 5px 0 0 5px;
+}
+form h2{
+   text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #0099ff;
+    padding: 3% 1%;
+    border-radius: 10px 10px 0 0;
+}
+form input{
+    width: 83%;
+    height: 3%;
+    padding: 2%;
+    margin: 5% 0 2% -1%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+form input[type ='submit']{
+    background-color: #0099ff;
+    color: white;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 0;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sign-up-div{
+    display: none;
+    margin-top: -35%;
+    margin-left: 35%;
+    z-index: 10;
+    position: relative;
+}
+.sign-up-div #hide_sign_up{
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 70px;
+    float: right;
+    margin-right: 15%;
+    margin-top: -10%;
+}
+
+.sign-in-div{
+    display: none;
+    margin-top: -35%;
+    margin-left: 35%;
+    z-index: 10;
+    position: relative;
+}
+.sign-in-div form h2{
+    background-color: #13c006;
+}
+
+.sign-in-div form input[type = 'submit']{
+    background-color: #13c006;
+}
+
+.sign-in-div form i{
+    background-color: #13c006;
+}
+.sign-in-div #hide_sign_in{
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 70px;
+    float: right;
+    margin-right: 15%;
+    margin-top: -10%;
+}
+/* styling for alert box*/
+.alert-box{
+    width: 30%;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 2%;
+    margin-left: 30%;
+    margin-top: 15%;
+    position: relative;
+    z-index: 10;
+    display: none;
+}
+
+.alert-box h3{
+    background-color: #0099ff;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 3% 0;
+    border-radius: 3% 3% 0 0;
+}
+.alert-box p{
+    text-align: center;
+    margin: 5%;
+}
+
+.alert-box button{
+    color: white;
+    background-color: #0099ff;
+    padding: 3% 7%;
+    border: none;
+    border-radius: 1%;
+    font-weight: bolder;
+    margin-left: 40%;
+}
+
+/* styling for the loader */
+.loader{
+    width: 150px;
+    height: 150px;
+    border: 30px solid #dfe5ec;
+    margin-top: 15%;
+    margin-left: 45%;
+    border-top: 30px solid #0099ff;
+    border-radius: 100%;
+    animation: rotate 1s linear infinite;
+    -webkit-animation: rotate 1s linear infinite;
+    display: none;
+}
+
+@keyframes  rotate{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}

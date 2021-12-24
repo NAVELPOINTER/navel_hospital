@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact-us</title>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/nav-pages.css"/>
+    <link rel="stylesheet" href="../css/font_awesome_4/css/font-awesome.css">
+    <script src="../js/navpages.js"></script>
+</head>
+<body>
+    <div class="main-contact-us-div">
+        <div class="nav-bar">
+            <ul>
+                <li><a href="about-us.html">About-us</a></li>
+                <li><a href="#" onclick="display_medical_data_center_login()">Medical-Data-Center</a></li>
+                <li><a href="contact-us.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div class="upper-section">
+            <div class="contact-us-form">
+                <form action="#">
+                    <h2>Navel hospital Contact-Us</h2>
+                    <input type="text" name="service-tag" placeholder="Enter your service tag..."/>
+                    <textarea name="message" rows="30" cols="50" placeholder="Enter your query..."></textarea>
+                    <input type="submit" value="Contact Us.."/>
+                </form>
+            </div>
+            <div class="response-graph">
+                <h3>Likelihood of Response</h3>
+                <hr>
+                <div class="bars">
+                    <div id="bar-real-1">
+                        <div></div>
+                    </div>
+                    <div id="bar-real-2">
+                        <div></div>
+                    </div>
+                    <div id="bar-real-3">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="response-graph-dir">
+                    <ul>
+                        <li>
+                            <div class="telephone">
+                                <div></div><p>TelePhone</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="website-queries">
+                                <div></div><p>Website queries</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="email">
+                                <div></div><p>email</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="response">
+                    <h3>Click to contact any of them</h3>
+                    <ul>
+                        <li> <img src="../images/receptionist.jpeg" alt="receptionist"> </li>
+                        <li> <img src="../images/clerk.jpeg" alt="office clerk"> </li>
+                        <li> <img src="../images/counsellor.jpeg" alt="counsellor"> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lower-section">
+            <div class="tel-no-btn">
+                <h3>Tel:</h3>
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> 
+                        0745667</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> 
+                        98389982</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> 
+                        8883892</li>
+                </ul>
+            </div>
+            <div class="email-addresses">
+                <h3>Email:</h3>
+                <ul>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                        emmanuelsankoh@gmail.com</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                        emmanuelsankoh1844@gmail.com</li>
+                </ul>
+            </div>  
+        </div>
+        <div class="locate-us">
+            <a href="about-us.html">Locate Us</a>
+        </div>
+        <div class="footer">
+            <h3>Navel Hospital</h3>
+            <p>website: <a href="www.navelhospital.com">www.navelhospital.com</a></p>
+            <p>email: <a href="navelhospital@gmail.com">navelhospital@gmail.com</a></p>
+
+            <div class="social-media">
+                <h2>Navel Hospital Social Media platforms</h2>
+                <hr>
+                <ul>
+                    <li><a href="www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href="www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <p>Copyright © 2021 HubSpot, Inc.</p>
+            <ul class="footer-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About-us</a></li>
+                <li><a href="#" onclick="display_medical_data_center_login()">Medical-Data-Center</a></li>
+                <li><a href="contact-us.html">Contact-us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="medical-center-login-form">
+        <a id="hide_login" href="#" onclick="hide_mdc_login()">X</a>
+        <form action="../php/sign_in_mdc.php" method="post" id="medical-center-login-form">
+            <h2>Navel Medical Data Center</h2>
+            <div>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <input type="text" name="service-tag" placeholder="Enter your service tag"/>
+            </div>
+            <div>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" name="username" placeholder="Enter your username"/>
+            </div>
+            <div>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" name="password" placeholder="Enter your password"/>
+            </div>
+            <input id="hidden" type="hidden" name="url" value=""/>
+            <div>
+                <input type="submit" value="Login"/>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        set_url();
+    </script>
+</body>
+</html>

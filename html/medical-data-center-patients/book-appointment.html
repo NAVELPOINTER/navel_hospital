@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/mdc.css"/>
+    <link rel="stylesheet" href="../../css/font_awesome_4/css/font-awesome.css">
+    <title></title>
+</head>
+<body>
+    <div class="book-appointment">
+        <form action="../../php/book_appointment.php" method="post">
+            <h3>Online Appointment Booking</h3>
+            <div id="slide-shown" class="slide">
+                <input type="text" name="name" placeholder="Enter your name"/>
+                <input type="text" name="service_tag" value="1SDA" readonly/>
+            </div>
+            <div class="slide">
+                <input type="text" name="department" placeholder="Click the + choose department" id="btn-end"/>
+                <button type="button">+</button>
+                <input type="text" name="med-staff-present" placeholder="Click the + choose available medical staff" id="btn-end"/>
+                <button type="button">+</button>
+            </div>
+            <div class="slide">
+                <input type="text" name="date" placeholder="Click the + choose date" id="btn-end"/>
+                <button type="button">+</button>
+                <input type="text" name="time" placeholder="Click the + choose time" id="btn-end"/>
+                <button type="button">+</button>
+            </div>
+            <div class="nav-btn">
+                <ul>
+                    <li><button type="button" id="previous" onclick="slide_booking_form()"><i class="fa fa-arrow-left" aria-hidden="true"></i>Previous</button></li>
+                    <li><button type="button" id="next" onclick="slide_booking_form()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button></li>
+                </ul>
+            </div>
+            <div class="counting-indicator">
+                <ul>
+                    <li><i id="fst-indicator" class="fa fa-circle-o" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            <input type="submit" value="Book Appointment" id="submit"/>
+        </form>
+    </div>
+    <script src="../../js/mdcPatients.js"></script>
+</body>
+</html>

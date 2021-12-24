@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>about-us</title>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/nav-pages.css"/>
+    <link rel="stylesheet" href="../css/font_awesome_4/css/font-awesome.css">
+    <script src="../js/navpages.js"></script>
+  </head>
+  <body >
+    <div class="main-about-us-div">
+        <div class="nav-bar">
+            <ul>
+                <li><a href="about-us.html">About-us</a></li>
+                <li><a href="#" onclick="display_medical_data_center_login()">Medical-Data-Center</a></li>
+                <li><a href="contact-us.html">Contact-us</a></li>
+            </ul>
+        </div>
+        <div class="map-location">
+          <div id="map">
+            <h2>Navel Hospital Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.5504683371564!2d37.01886715661165!3d-1.086533999207437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f48a23d4f609d%3A0x2d46c60ed88d83de!2sGachororo%20Health%20Centre!5e0!3m2!1sen!2ske!4v1637402868799!5m2!1sen!2ske" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="middle-band">
+          <canvas id="about-us-band" width="1870px" height="100px">
+            
+          </canvas>
+        </div>
+        
+        <div class="mid-lower-section">
+          <div class="ceo-info">
+            <img src="../images/ceo.jpeg" alt="Navel hospital founder"/>
+            <h3>------navel hospital---------</h3>
+            <hr>
+            <p>Navel Hospital is a private hospital that was begun in 1970 with the intention of providing quality medical services to its patients.</p>
+            <h3>Objectives:</h3>
+            <ul>
+              <li><i class="fa fa-star" aria-hidden="true"></i> Provide High quality medical services</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i> Reliable and readily available services</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i> Improve health conditions of its community</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i> Develop and come up with medicine to treat various illnesses</li>
+              <h3>Future Goals:</h3>
+              <li><i class="fa fa-star" aria-hidden="true"></i> Attain international standards</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i> Provide medical awareness to its people</li>
+              <li><i class="fa fa-star" aria-hidden="true"></i> Complete eradication of poor health conditions in Africa</li>
+            </ul>
+          </div>
+          <div class="medical-buildings-slider">
+              <img id="medical_buildings" src="../images/admin.jpeg" alt="navel-hospital medical-buildings">
+          </div>
+          <div class="text-directive">
+            <div id="display-counter">
+              <ul id="display-counter-listing">
+              </ul>
+            </div>
+            <div class="text-directive-real">
+              <p id="text-directive-real">This is our text</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="a-lower-section">
+            <h2>Navel Hospital</h2>
+            <h3>A Healthy Body Begins With Yourself</h3>
+        </div>
+        <div class="footer">
+          <h3>Navel Hospital</h3>
+          <p>website: <a href="www.navelhospital.com">www.navelhospital.com</a></p>
+          <p>email: <a href="navelhospital@gmail.com">navelhospital@gmail.com</a></p>
+  
+          <div class="social-media">
+              <h2>Navel Hospital Social Media platforms</h2>
+              <hr>
+              <ul>
+                  <li><a href="www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                  <li><a href="www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+          </div>
+          <p>Copyright © 2021 HubSpot, Inc.</p>
+          <ul class="footer-nav">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about-us.html">About-us</a></li>
+              <li><a href="#" onclick="display_medical_data_center_login()">Medical-Data-Center</a></li>
+              <li><a href="contact-us.html">Contact-us</a></li>
+          </ul>
+      </div>
+    </div>
+    
+    <div class="medical-center-login-form" style="margin-top: -100%">
+      <a id="hide_login" href="#" onclick="hide_mdc_login()" style="margin-right: -15%">X</a>
+      <form action="../php/sign_in_mdc.php" method="post" id="medical-center-login-form">
+          <h2>Navel Medical Data Center</h2>
+          <div>
+              <i class="fa fa-tag" aria-hidden="true"></i>
+              <input type="text" name="service-tag" placeholder="Enter your service tag"/>
+          </div>
+          <div>
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <input type="text" name="username" placeholder="Enter your username"/>
+          </div>
+          <div>
+              <i class="fa fa-lock" aria-hidden="true"></i>
+              <input type="password" name="password" placeholder="Enter your password"/>
+          </div>
+          <input id="hidden" type="hidden" name="url" value=""/>
+          <div>
+              <input type="submit" value="Login"/>
+          </div>
+      </form>
+    </div>
+    
+    <script>
+      set_url();
+      draw_about_as_band();
+      med_buildings_slider();
+    </script>
+  </body>
+</html>
